@@ -1,5 +1,8 @@
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 243, 243);
+   }
 form {border: 3px solid #4CAF50;width:30%}
 
 input[type=text], input[type=password] {
@@ -11,7 +14,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+.btn {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -21,16 +24,21 @@ button {
   width: 100%;
 }
 
-button:hover {
+.btn:hover {
   opacity: 0.8;
 }
 
 .cancelbtn {
+  color: white;
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
+  border: none;
 }
 
+.cancelbtn:hover{
+  opacity: 0.8;
+}
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
@@ -41,8 +49,102 @@ img.avatar {
   border-radius: 50%;
 }
 
+.head-container{
+  font-size: 200%;
+  margin-left: 35%;
+}
+.body-container{
+  margin-left: 25%;
+  width: 150%;
+  
+}
 .container {
   padding: 16px;
+  
+  
+}
+.icon-container{
+  
+  margin-left: 35%;
+}
+
+.sign-in-door{
+  font-size: 250%;
+  display: inline-block;
+  border: none;
+}
+.sign-in-door .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  border-radius: 100px;
+  padding: 5px 0;
+  top: -5px;
+  left: 105%;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.sign-in-door:hover .tooltiptext {
+  visibility: visible;
+}
+
+.sign-in-door .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.log-in-icon{
+  font-size: 250%;
+  display: inline-block;
+  border: none;
+  
+}
+
+.tooltiptext{
+  font-size: 20px;
+  padding-top:10px;
+}
+
+.log-in-icon .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  border-radius: 100px;
+  padding: 5px 0;
+  top: -5px;
+  left: 105%;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.log-in-icon:hover .tooltiptext {
+  visibility: visible;
+}
+
+.log-in-icon .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
 }
 
 span.psw {
