@@ -46,21 +46,27 @@
   <div class="icon-container">
       <!--- Sign in --->
       <div class="sign-in-door">
-        <button title="Sign in" class="sign-in-door">
+        <button class="sign-in-door"
+                onclick="document.getElementClassName('sign-in-door').style.visibility = 'visible'"
+                onclick="documnet.getElementClassName('log-in-icon').style.visibility='hidden'"
+                title="Sign in">
           <i class="fas fa-door-open"></i>
         </button>
         
       </div>
       <!--- Log in --->
       <div class="log-in-icon">
-        <button title="Log In" class="log-in-icon">
+        <button class="log-in-icon"
+                 onclick="document.getElementClassName('log-in-icon').style.visibility = 'visible'"
+                 onclick="documnet.getElementClassName('sign-in-door').style.visibility='hidden'"
+                 title="Log In" >
           <i class="fas fa-user-circle"></i>
         </button>
         
       </div>
     </div>
-
-  <div class="body-container">
+<div>
+  <div class="login-container">
     <form action="/action_page.php">
       <div class="container">
         <label for="uname"><b>Username</b></label>
@@ -81,6 +87,25 @@
       </div>
     </form>
   </div>
+
+  <div class="register-container">
+    <form action="/action_page.php">
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" minlength="5" maxlength="20" required>
+
+        <label for="email"><b>E-mail</b></label>
+        <input type="email" placeholder="Enter e-mail" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" minlength="8" required>
+
+        <button class="btn" type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 </body>
 
 </html>
